@@ -1,0 +1,108 @@
+:root{
+    --bg-color: #000;
+    --orange: #ff9501;
+    --grey: #a6a6a6;
+    --white:#fdfdfd;
+    --addMore: rgb(62, 94, 235);
+}
+.field{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+.calc {
+    width: 300px;
+    height: 500px;
+    border: 1px solid #000;
+    border-radius: 4%;
+    background: var(--bg-color);
+    padding:18px;
+    box-shadow: 4px 4px 4px #4f4f4f;
+    
+}
+
+.calc_inpt {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 125px;
+    width: 100%;
+    font-size: 30px;
+    justify-items: end;
+    background-color: rgb(47, 45, 45) ;
+    border: none;
+    color: var(--white);
+    outline: none;
+    caret-color:rgb(47, 45, 45);
+}
+
+
+.calc-btns {
+    display: grid;
+    grid-template-areas: 
+    "ac plus-minus percent division"
+    "seven eight nine multpi"
+    "four five six minus"
+    "add-more zero dot equal";
+    grid-gap:5px;
+    justify-items: center;
+}
+
+.btn{
+    width: 60px;
+    height: 60px;
+    background: #333;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+    color:var(--white)
+}
+.btn:hover, .btn:focus{
+    filter: brightness(120%);
+}
+.btn:active{
+    filter:brightness(90%);
+}
+.btn.bg-grey{
+    background-color:var(--grey);
+}
+.btn.bg-orange{
+    background-color: var(--orange);
+}
+
+.factorials {
+    width: 300px;
+        height: 500px;
+        border: 1px solid #000;
+        border-radius: 4%;
+        background: var(--bg-color);
+        padding: 18px;
+        box-shadow: 4px 4px 4px #4f4f4f;
+        display: flex;
+    align-items: end;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.fact-btns {
+    width: max-content;
+    display:grid;
+    grid-template-columns: 85px 85px 85px;
+    grid-template-rows:85px 85px 85px ;
+    margin-bottom: 44px;
+}
+
+.fbtn {
+    width: 70px;
+        height: 70px;
+        background: #333;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 60px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        user-select: none;
+        color: var(--white)
+}

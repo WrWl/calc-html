@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="field">
+        <div class="factorials">
+            <div class="fact-btns">
+                <button class="fbtn"></button>
+                <button class="fbtn"></button>
+                <button class="fbtn"></button>
+                <button class="fbtn"></button>
+                <button class="fbtn"></button>
+                <button class="fbtn"></button>
+                <button class="fbtn"></button>
+                <button class="fbtn"></button>
+                <button class="fbtn"></button>
+            </div>
+        </div>
+        <div class="calc">
+            <input type="text" dir="rtl" class="calc_inpt">
+            <div class="calc-btns">
+                <div class="btn ac bg-grey">ac</div>
+                <div class="btn plus-minus bg-grey">+/-</div>
+                <div class="btn percent bg-grey">%</div>
+                <div class="btn division bg-orange">/</div>
+        
+                <div class="btn seven">7</div>
+                <div class="btn eight">8</div>
+                <div class="btn nine">9</div>
+                <div class="btn multiply bg-orange">*</div>
+        
+                <div class="btn four">4</div>
+                <div class="btn five">5</div>
+                <div class="btn six">6</div>
+                <div class="btn minus bg-orange">-</div>
+        
+                <button onclick="" class="btn add-more bg-orange"><=</button>
+                        <div class="btn zero">0</div>
+                        <div class="btn dot">.</div>
+                        <div class="btn equal bg-orange ">=</div>
+        
+                </div>
+            </div>
+    </div>
+    <script>
+        const addMoreBtn = document.querySelector(".add-more");
+        const factorials = document.querySelector(".factorials")
+        addMoreBtn.addEventListener("click", ()=>{
+           factorials.style.visibility === "hidden" ?  a(): b()
+            function a(){
+                factorials.style.visibility = "visible"
+                addMoreBtn.style.background = "var(--addMore)"
+                addMoreBtn.textContent = "=>"
+            }
+            function b(){
+                factorials.style.visibility = "hidden"
+                addMoreBtn.style.background = "var(--orange)"
+                addMoreBtn.textContent = "<="
+            }
+        })
+    </script>
+</body>
+</html>
